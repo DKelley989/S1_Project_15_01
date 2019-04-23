@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
     for (var i = 0; i < allSelect.length; i++) {
 
         /// For each selection list in the collection, creates an anonymous function that changes the page shown in the browser window to the value of the target of the event object that initiated the onchange event.
-        allSelect[i].addEventListener('onchange', function (e) {
+        allSelect[i].addEventListener('change', function (e) {
             window.location.href = e.target.value;
         });
     }
